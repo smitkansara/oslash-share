@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select</title>
+    <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css" />
+    <link href="plugins/bootstrap-5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="os_share_dropdown_bg">
+      <div class="os_share_dropdown_inner">
+        <div id="osdropDown" class="drop-down__button">
+          <span class="drop-down__name me-2"> Share</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="#ffffff"
+            class="bi bi-share-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+            />
+          </svg>
+        </div>
+
+        <div class="drop-down__menu-box">
+          <ul class="drop-down__menu">
+            <li data-name="profile" class="drop-down__item">
+              <div class="card text-center">
+                <div class="card-header bg-white">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="images/user-img.jpg" alt="..." />
+                    </div>
+                    <div class="flex-grow-1 ms-3 me-5">
+                      <h5 class="mb-0 text-start">Share to web</h5>
+                      <p class="mb-0 text-start">
+                        Publish and share link with anyone
+                      </p>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="flexSwitchCheckDefault"
+                      ></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="col-auto">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="autoSizingInputGroup"
+                        placeholder="People, emails, groups"
+                      />
+                    </div>
+                    <label class="visually-hidden" for="autoSizingInputGroup"
+                      >Username</label
+                    >
+                  </div>
+                  <div class="pt-3">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img src="images/user-img.jpg" alt="..." />
+                      </div>
+                      <div class="flex-grow-1 ms-3 me-2">
+                        <h5 class="mb-0 text-start">Everyone at OSlash</h5>
+                        <p class="mb-0 text-start">25 workspace members</p>
+                      </div>
+                      <select class="form-select">
+                        <option selected>No access</option>
+                        <option value="1">Can edit</option>
+                        <option value="2">Can view</option>
+                        <option value="2">Full</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-muted">
+                  <div class="container text-center">
+                    <div class="row">
+                      <div class="col-8 p-0 text-start">
+                        <p class="mb-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            fill="currentColor"
+                            class="bi bi-question-circle me-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                            />
+                            <path
+                              d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                            />
+                          </svg>
+                          learn about sharing
+                        </p>
+                      </div>
+                      <div class="col-4 p-0 text-end">
+                        <p class="mb-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            fill="currentColor"
+                            class="bi bi-link-45deg me-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
+                            />
+                            <path
+                              d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"
+                            />
+                          </svg>
+                          Copy link
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap-5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('#osdropDown').click(function () {
+          $('.os_share_dropdown_inner').toggleClass('drop-down--active');
+        });
+      });
+    </script>
+  </body>
+</html>

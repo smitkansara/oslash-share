@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.os_share_dropdown_bg {
+  display: table-cell;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.os_share_dropdown_inner {
+  display: inline-block;
+  position: relative;
+}
+
+.drop-down__button {
+  background: #000;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 18px;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.drop-down__name {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.drop-down__icon {
+  width: 18px;
+  vertical-align: middle;
+  margin-left: 14px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.drop-down__menu-box {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 10%);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 5px;
+  min-width: 400px;
+}
+
+.drop-down__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.drop-down__menu-box:after {
+  content: '';
+  background-color: transparent;
+}
+
+.drop-down__item {
+  font-size: 13px;
+  padding: 0;
+  text-align: left;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.drop-down--active .drop-down__menu-box {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 15px;
+  min-width: 400px;
+}
+
+.os_share_dropdown_bg .drop-down__menu-box img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+}
+
+.os_share_dropdown_bg .drop-down__menu-box .form-check {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: normal;
+  min-height: auto;
+}
+.os_share_dropdown_bg .drop-down__menu-box .form-check input {
+  width: 35px;
+  height: 20px;
+}
+.os_share_dropdown_bg .card-header h5 {
+  color: #111827;
+}
+.os_share_dropdown_bg .card-header p {
+  color: #6b7280;
+}
+.os_share_dropdown_bg .card-footer .text-start p {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 14px;
+}
+.os_share_dropdown_bg .card-footer .text-end p {
+  color: #111827;
+  font-weight: 600;
+  font-size: 14px;
+}
+.os_share_dropdown_bg .card-footer {
+  background: #f9fafb;
+  padding: 15px 20px;
+}
+.os_share_dropdown_bg .card-body h5 {
+  font-size: 18px;
+}
+.os_share_dropdown_bg .card-body select {
+  padding: 0;
+  width: 95px;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 12px;
+}
